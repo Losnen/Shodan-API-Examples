@@ -15,7 +15,7 @@ FACETS_TITLES = {
     'country': 'Top 15 countries',
 }
 try:
-    api = shodan.Shodan("71xqxaeUdz62H4DoNC7LzaLwJ7RhrLBz")
+    api = shodan.Shodan("")
     result = api.count("ngnix",facets=FACETS)
     print 'Total results: %s\n' % result['total']
     for facet in result['facets']:
